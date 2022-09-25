@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        {% include 'base/meta.html' %}
+
+        {% include 'base/css.html' %}
+
+        {% block other_css %}{% endblock other_css %}
+
+        {% if title %}
+            <title>{{title}}</title>
+            {% else %}
+            <title>{% block title %}{% endblock title %}</title>
+        {% endif %}
+
+    </head>
+
+    <body {% block other_body_css %}{% endblock other_body_css %}>
+
+        <main class="main-content position-relative border-radius-lg ">
+
+            {% block other_body %}{% endblock other_body %}
+
+            {% include 'base/js.html' %}
+
+        </main>
+
+        {% block other_js %}{% endblock other_js %}
+
+    </body>
+
+</html>
