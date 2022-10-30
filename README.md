@@ -63,7 +63,7 @@ You can specify which Django version you want to install. For example:
 $ pip install Django==4.1.2
 ```
 
-Clone the project from “https://github.com/AditChheda/BE-SEM7-Projects-NLP.git”
+Clone the project from https://github.com/AditChheda/BE-SEM7-Projects-NLP
 
 Run the development server to check if everything has been installed correctly:
 ```
